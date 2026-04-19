@@ -35,6 +35,19 @@ buildExpired = false
   showtoc = true
   tocopen = false
 
+  [params.profileMode]
+    enabled = true
+    title = "Luis Núñez"
+    subtitle = """Analytics Engineer — I build the layer between raw data and business decisions. Data lakes, ETL/ELT pipelines, relational models, and SQL-driven dashboards. 13 hands-on projects below covering medallion-architecture data lakes on AWS, time-series pipelines in InfluxDB, and self-serve BI stacks."""
+    imageUrl = "/images/profile.jpg"
+    imageTitle = "Luis Núñez"
+    imageWidth = 150
+    imageHeight = 150
+    buttons = [
+      { name = "Projects", url = "/projects/" },
+      { name = "About", url = "/about/" }
+    ]
+
   [params.homeInfoParams]
     Title = "Analytics Engineer"
     Content = """
