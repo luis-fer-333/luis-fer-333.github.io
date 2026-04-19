@@ -1,0 +1,13 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Node (if we ever add a PostCSS or Tailwind pipeline)
+node_modules/
+package-lock.json

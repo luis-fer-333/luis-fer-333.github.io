@@ -1,0 +1,94 @@
+baseURL = "https://luis-fer-333.github.io/"
+languageCode = "en-us"
+title = "Luis Núñez — Analytics Engineer Portfolio"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  description = "Analytics Engineer portfolio — data lakes, ETL pipelines, SQL modeling, and BI dashboards built from 13 hands-on projects."
+  author = "Luis Núñez"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Analytics Engineer"
+    Content = """
+Hi, I'm Luis — an Analytics Engineer focused on the layer between raw data and business decisions.
+
+I build data lakes, ETL/ELT pipelines, relational models, and SQL-driven dashboards. My sweet spot is taking messy multi-source data and turning it into clean, tested, analytics-ready tables that BI teams and stakeholders can actually use.
+
+Below you'll find 13 hands-on projects demonstrating the full analytics engineering stack — from medallion-architecture data lakes on AWS to time-series pipelines in InfluxDB to self-serve BI dashboards in Supabase + Preset.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/luis-fer-333"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/luisnunez"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:luisfernando064@gmail.com"
+
+  [params.assets]
+    disableHLJS = false
+    favicon = "/images/favicon.ico"
+
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Writing"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/luis-fer-333"
+    weight = 40
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "github-dark"
