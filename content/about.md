@@ -47,4 +47,4 @@ Python, AWS, Spark, InfluxDB, pandas, MLflow, medallion data-lake patterns.
 
 ## Contact
 
-- [luisfernando064@gmail.com](mailto:luisfernando064@gmail.com) · [LinkedIn](https://linkedin.com/in/luisnunez) · [GitHub](https://github.com/luis-fer-333)
+- [luisfernando064@gmail.com](mailto:luisfernando064@gmail.com) · [LinkedIn](https://linkedin.com/in/lun3429) · [GitHub](https://github.com/luis-fer-333)
