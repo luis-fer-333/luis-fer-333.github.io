@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "14 hands-on analytics engineering and data projects — ETL pipelines, data lakes, SQL modeling, BI dashboards, and cloud architectures."
+description: "14 projects sorted by relevance to analytics engineering."
 ---
 
-14 projects spanning the analytics engineering stack — from data lakes and ETL pipelines to SQL modeling, BI dashboards, and serverless cloud apps. Sorted by relevance.
+Each project includes the technical story, key decisions, and trade-offs. Click any card to dive in.

@@ -80,6 +80,12 @@ I take messy multi-source data and turn it into clean, tested, analytics-ready t
     url = "/about/"
     weight = 20
 
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 30
+
 [markup]
   [markup.highlight]
     codeFences = true
