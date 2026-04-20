@@ -1,12 +1,13 @@
 baseURL = "https://luis-fer-333.github.io/"
 languageCode = "en-us"
-title = "Luis Núñez — Analytics Engineer Portfolio"
+title = "Luis Núñez — Analytics Engineer"
 theme = "PaperMod"
 
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
+ignoreLogs = ['warning-partial-superfluous-prefix']
 
 [pagination]
   pagerSize = 10
@@ -17,45 +18,32 @@ buildExpired = false
 
 [params]
   env = "production"
-  description = "Analytics Engineer portfolio — data lakes, ETL pipelines, SQL modeling, and BI dashboards built from 13 hands-on projects."
+  description = "Analytics Engineer — data lakes, ETL pipelines, SQL modeling, BI dashboards."
   author = "Luis Núñez"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+  ShowBreadCrumbs = false
   ShowCodeCopyButtons = true
   ShowToc = true
   TocOpen = false
-  disableSpecial1stPost = false
+  disableSpecial1stPost = true
   disableScrollToTop = false
   comments = false
   hidemeta = false
   hideSummary = false
-  showtoc = true
-  tocopen = false
-
-  [params.profileMode]
-    enabled = true
-    title = "Luis Núñez"
-    subtitle = """Analytics Engineer — I build the layer between raw data and business decisions. Data lakes, ETL/ELT pipelines, relational models, and SQL-driven dashboards. 13 hands-on projects below covering medallion-architecture data lakes on AWS, time-series pipelines in InfluxDB, and self-serve BI stacks."""
-    imageUrl = "/images/profile.jpg"
-    imageTitle = "Luis Núñez"
-    imageWidth = 150
-    imageHeight = 150
-    buttons = [
-      { name = "Projects", url = "/projects/" },
-      { name = "About", url = "/about/" }
-    ]
 
   [params.homeInfoParams]
-    Title = "Analytics Engineer"
+    Title = "Luis Núñez"
     Content = """
-Hi, I'm Luis — an Analytics Engineer focused on the layer between raw data and business decisions.
+Analytics Engineer with 3+ years at Amazon, building production data pipelines, SQL models, and BI dashboards across 13 EU countries. Over **€100M** in savings and recovered value.
 
-I build data lakes, ETL/ELT pipelines, relational models, and SQL-driven dashboards. My sweet spot is taking messy multi-source data and turning it into clean, tested, analytics-ready tables that BI teams and stakeholders can actually use.
+**Stack:** SQL (Redshift, CTEs, window functions) · Python (pandas, PySpark, Lambda) · AWS (S3, Glue, Athena) · dbt-style modeling (medallion, star schema) · BI (QuickSight, Preset, Tableau) · Orchestration (Prefect, Lambda)
 
-Below you'll find 13 hands-on projects demonstrating the full analytics engineering stack — from medallion-architecture data lakes on AWS to time-series pipelines in InfluxDB to self-serve BI dashboards in Supabase + Preset.
+**What I do:** I take messy multi-source data and turn it into clean, tested, analytics-ready tables that BI teams and stakeholders can actually use — from ingestion through modeling to dashboards.
+
+Browse my [projects](/projects/) or learn more [about me](/about/).
 """
 
   [[params.socialIcons]]
@@ -72,7 +60,6 @@ Below you'll find 13 hands-on projects demonstrating the full analytics engineer
 
   [params.assets]
     disableHLJS = false
-    favicon = "/images/favicon.ico"
 
 [menu]
   [[menu.main]]
@@ -82,22 +69,10 @@ Below you'll find 13 hands-on projects demonstrating the full analytics engineer
     weight = 10
 
   [[menu.main]]
-    identifier = "posts"
-    name = "Writing"
-    url = "/posts/"
-    weight = 20
-
-  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 30
-
-  [[menu.main]]
-    identifier = "github"
-    name = "GitHub"
-    url = "https://github.com/luis-fer-333"
-    weight = 40
+    weight = 20
 
 [markup]
   [markup.highlight]

@@ -8,41 +8,43 @@ ShowReadingTime: false
 ShowPostNavLinks: false
 ---
 
-## Who I am
+![Luis Núñez](/images/profile.jpg)
 
-I'm **Luis Núñez**, an Analytics Engineer based in Spain. I build the layer that turns raw data into decision-ready datasets and dashboards — the glue between Data Engineers who produce data and the Analysts, Scientists, and Stakeholders who consume it.
+---
 
-## What I do
+I'm **Luis Núñez**, an Analytics Engineer based in Barcelona. I build the layer that turns raw data into decision-ready datasets and dashboards — the glue between the engineers who produce data and the analysts, scientists, and stakeholders who consume it.
 
-My focus areas:
+## Education
 
-- **Dimensional and medallion modeling** — bronze → silver → gold, star schemas, slowly-changing dimensions
-- **ETL / ELT pipelines** — moving and reshaping data across stores, idempotent backfills, event-driven ingestion
-- **SQL at depth** — CTEs, window functions, query optimization, lineage across joins
-- **Cloud data platforms** — AWS (S3, Lambda, DynamoDB, Glue, Athena), PostgreSQL (Supabase), InfluxDB
-- **Orchestration** — Prefect, scheduled triggers, dependency management
-- **BI tooling** — Preset / Superset, Power BI, stakeholder-oriented dashboard design
-- **Python for data work** — pandas, SQLAlchemy, PySpark, Prefect flows
+**M.Sc., Data Science & Data Engineering** — Universidad de Castilla-La Mancha · 2024 – 2025
+Python, AWS, Spark, InfluxDB, pandas, MLflow, medallion data-lake patterns.
 
-## Background
+**B.Eng., Engineering and Management (Honors)** — University of Applied Sciences Ingolstadt · 2019 – 2023
 
-13 hands-on projects completed through a Data Science + Cloud Data Engineering master's program at the University of Castilla-La Mancha (Spain), spanning:
+## Experience
 
-- Data ingestion from REST APIs, NoSQL stores, and public datasets
-- Data lake architectures on AWS S3 with medallion layering
-- Relational modeling across SQLite and PostgreSQL
-- Time-series databases (InfluxDB) and streaming ingestion
-- Orchestration with AWS Lambda + Prefect
-- BI dashboards with Preset, Superset, and Power BI
+**Amazon — Business Intelligence Engineer** · Barcelona / Munich / Luxembourg · 2022 – Present
 
-Each project is documented in this portfolio with the technical story, key decisions, and trade-offs.
+- Architected an automated SLA-claim pipeline across 13 EU countries and 40+ carriers (SQL, Redshift, S3, Lambda) — recovered **€50M in compensation within 6 months**.
+- Built analytics pipelines processing large-scale logistics data, identifying underperforming carriers and generating **€40M in cost savings**.
+- Productionized EU-wide SQL data models powering performance monitoring across 14 countries and 40+ stakeholders.
+- Developed KPI and volume-tracking frameworks comparing forecasts vs actuals — **€20M in network optimization savings**.
+- Optimized complex SQL transformations on 100TB+ datasets — **40% performance improvement** and reduced compute costs.
+- Built automated ETL workflows (Python + SQL + Redshift) for ingestion, transformation, and validation of high-volume operational datasets.
+
+**ASTech (AUDI AG) — Software Developer** · Ingolstadt, Germany · 2020 – 2021
+
+- Developed C++ components (ADTF3) and automated dependency visualization with Python & GraphQL.
+
+## What I work with
+
+- **SQL** — CTEs, window functions, query optimization, dimensional modeling
+- **Data Modeling** — medallion (bronze/silver/gold), star schema, slowly-changing dimensions
+- **ETL / ELT** — AWS Lambda, Python (pandas, PySpark), Prefect, scheduled orchestration
+- **Cloud** — AWS (S3, Lambda, Redshift, Glue, Athena), PostgreSQL (Supabase), InfluxDB
+- **BI** — Preset / Superset, QuickSight, Tableau, stakeholder-oriented dashboard design
+- **Languages** — English C1 · German B1 · Spanish Native · Catalan C1
 
 ## Contact
 
-- **Email**: [luisfernando064@gmail.com](mailto:luisfernando064@gmail.com)
-- **LinkedIn**: [linkedin.com/in/luisnunez](https://linkedin.com/in/luisnunez)
-- **GitHub**: [github.com/luis-fer-333](https://github.com/luis-fer-333)
-
-## What I'm looking for
-
-Roles that sit at the analytics engineering intersection — building the modeling, pipelines, and tested data products that analytics teams rely on. Strong preference for teams that take data quality, testing, and documentation seriously.
+- [luisfernando064@gmail.com](mailto:luisfernando064@gmail.com) · [LinkedIn](https://linkedin.com/in/luisnunez) · [GitHub](https://github.com/luis-fer-333)

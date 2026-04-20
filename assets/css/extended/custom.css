@@ -1,0 +1,19 @@
+/* Hero image on About page — full width, rounded corners, subtle shadow */
+.post-content img[alt="Luis Núñez"] {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+/* Cleaner landing page — tighter spacing */
+.first-entry {
+  border: none;
+}
+
+/* Hide post meta on home page entries */
+.home-info + .post-entry .post-meta,
+.first-entry .post-meta {
+  display: none;
+}
