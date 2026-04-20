@@ -89,5 +89,5 @@ The API exposes full-history endpoints, so initial load uses those (1901–2019 
 
 ## Links
 
-- [📓 Notebook (portfolio version)](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_XIII/Nobel_Prize_ETL_Datalake.ipynb)
-- [📁 Full project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_XIII)
+- [📓 Notebook (portfolio version)](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Nobel_Prize_ETL_Datalake/Nobel_Prize_ETL_Datalake.ipynb)
+- [📁 Full project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Nobel_Prize_ETL_Datalake)

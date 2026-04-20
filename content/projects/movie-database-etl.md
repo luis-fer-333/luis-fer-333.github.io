@@ -111,5 +111,5 @@ LIMIT 10;
 
 ## Links
 
-- [📓 Notebook (portfolio version)](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_II/Movie_Database_ETL_Pipeline.ipynb)
-- [📁 Full project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_II)
+- [📓 Notebook (portfolio version)](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Movie_Database_ETL_Pipeline/Movie_Database_ETL_Pipeline.ipynb)
+- [📁 Full project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Movie_Database_ETL_Pipeline)

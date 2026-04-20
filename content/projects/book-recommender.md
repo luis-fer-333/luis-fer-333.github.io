@@ -32,5 +32,5 @@ Three recommender approaches compared on the same 10,000-book dataset:
 
 ## Links
 
-- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_VIII/Book_Recommender_System.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_VIII)
+- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Book_Recommender_System/Book_Recommender_System.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Book_Recommender_System)

@@ -34,5 +34,5 @@ A small-but-real serverless architecture on AWS tying together five services:
 
 ## Links
 
-- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_XI/Cinema_Serverless_AWS_App.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_XI)
+- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Cinema_Serverless_AWS/Cinema_Serverless_AWS_App.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Cinema_Serverless_AWS)

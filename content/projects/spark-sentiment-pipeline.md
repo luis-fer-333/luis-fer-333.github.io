@@ -86,6 +86,6 @@ Before training, the 30% test partition is written to `electronics_test/` in S3.
 
 ## Links
 
-- [📓 Training notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_XII/Sentiment_Analysis_Spark_Training.ipynb)
-- [📓 Inference notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_XII/Sentiment_Analysis_Spark_Inference.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_XII)
+- [📓 Training notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Sentiment_Analysis_Spark/Sentiment_Analysis_Spark_Training.ipynb)
+- [📓 Inference notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Sentiment_Analysis_Spark/Sentiment_Analysis_Spark_Inference.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Sentiment_Analysis_Spark)

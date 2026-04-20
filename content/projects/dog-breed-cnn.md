@@ -38,5 +38,5 @@ Data augmentation on the scratch CNN actually made things *worse* — because th
 
 ## Links
 
-- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_VI/Dog_Breed_Classification_Deep_Learning.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_VI)
+- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Dog_Breed_Classification/Dog_Breed_Classification_Deep_Learning.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Dog_Breed_Classification)

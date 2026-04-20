@@ -1,4 +1,4 @@
-/* Hero image on About page — full width, rounded corners, subtle shadow */
+/* Hero image on About page — full width, rounded corners */
 .post-content img[alt="Luis Núñez"] {
   width: 100%;
   max-height: 420px;
@@ -7,13 +7,136 @@
   margin-bottom: 1.5rem;
 }
 
-/* Cleaner landing page — tighter spacing */
-.first-entry {
-  border: none;
-}
-
-/* Hide post meta on home page entries */
+/* Hide post meta on home page */
 .home-info + .post-entry .post-meta,
 .first-entry .post-meta {
   display: none;
+}
+
+/* ── Featured Projects Carousel ─────────────────────────── */
+
+.featured-projects {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding: 0 1.2rem;
+}
+
+.featured-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.project-card {
+  display: block;
+  flex: 1 1 calc(33.33% - 0.6rem);
+  min-width: 200px;
+  padding: 1.2rem 1.3rem;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.6rem;
+}
+
+.project-card p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: var(--tertiary);
+  opacity: 0.7;
+}
+
+.project-card.pinned {
+  grid-row: 1;
+  grid-column: 1;
+  border-left: 3px solid var(--primary);
+}
+
+.carousel-gap {
+  display: none;
+}
+
+.project-card.rotating {
+  grid-column: span 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Dots */
+.carousel-dots {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.carousel-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-dot.active {
+  background: var(--primary);
+}
+
+/* View all link */
+.view-all {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.view-all:hover {
+  opacity: 1;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 600px) {
+  .carousel-track {
+    grid-template-columns: 1fr;
+  }
 }

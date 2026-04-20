@@ -113,5 +113,5 @@ The final PDF exports of both dashboards are in the `Resultados/` folder alongsi
 
 ## Links
 
-- [📓 Notebook (portfolio version)](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_IX/Airbnb_Valencia_BI_Dashboards.ipynb)
-- [📁 Full project folder (includes dashboard PDFs)](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_IX)
+- [📓 Notebook (portfolio version)](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Airbnb_Valencia_BI/Airbnb_Valencia_BI_Dashboards.ipynb)
+- [📁 Full project folder (includes dashboard PDFs)](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Airbnb_Valencia_BI)

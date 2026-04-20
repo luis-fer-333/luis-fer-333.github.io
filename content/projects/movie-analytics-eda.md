@@ -49,5 +49,5 @@ One outlier carries much of the low-budget signal — *Paranormal Activity* achi
 
 ## Links
 
-- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_III/Movies_Exploratory_Data_Analysis.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_III)
+- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Movies_Exploratory_Data_Analysis/Movies_Exploratory_Data_Analysis.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Movies_Exploratory_Data_Analysis)

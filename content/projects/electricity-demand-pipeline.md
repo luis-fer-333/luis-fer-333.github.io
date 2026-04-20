@@ -95,6 +95,6 @@ The model is evaluated daily: for each test day, train on all data up to that da
 
 ## Links
 
-- [📓 Part 1: Ingestion](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_VII/Electricity_Demand_InfluxDB_Ingestion.ipynb)
-- [📓 Part 2: Forecasting](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_VII/Electricity_Demand_Forecasting.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_VII)
+- [📓 Part 1: Ingestion](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Electricity_Demand_Forecasting/Electricity_Demand_InfluxDB_Ingestion.ipynb)
+- [📓 Part 2: Forecasting](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Electricity_Demand_Forecasting/Electricity_Demand_Forecasting.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Electricity_Demand_Forecasting)

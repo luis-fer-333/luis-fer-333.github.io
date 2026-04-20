@@ -4,4 +4,97 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
+<!-- Featured Projects Carousel -->
+<div class="featured-projects">
+  <h2 class="featured-title">Featured Projects</h2>
+  <div class="carousel">
+    <div class="carousel-track">
+      <a href="/projects/medical-appointment-chatbot/" class="project-card pinned">
+        <span class="card-tag">LLM + Cloud</span>
+        <h3>Medical Appointment Chatbot</h3>
+        <p>LLM-powered WhatsApp bot on AWS Lambda for appointment management — LLaMA 3.3-70B, DynamoDB, Google Calendar.</p>
+      </a>
+      <div class="carousel-gap"></div>
+      <a href="/projects/nobel-prize-data-lake/" class="project-card rotating" data-index="0">
+        <span class="card-tag">Data Lake</span>
+        <h3>Nobel Prize Data Lake</h3>
+        <p>Medallion-architecture data lake on AWS with S3, Lambda, Prefect orchestration, and bronze/silver ETL layers.</p>
+      </a>
+      <a href="/projects/movie-database-etl/" class="project-card rotating" data-index="1">
+        <span class="card-tag">ETL</span>
+        <h3>Movie Database ETL</h3>
+        <p>Multi-source ingestion from IMDb, TMDb API, and MongoDB into a normalized relational schema.</p>
+      </a>
+      <a href="/projects/airbnb-valencia-bi/" class="project-card rotating" data-index="2">
+        <span class="card-tag">BI</span>
+        <h3>Airbnb Valencia BI</h3>
+        <p>Cloud BI stack on Supabase + Preset with SQL modeling and stakeholder dashboards over 8K+ listings.</p>
+      </a>
+      <a href="/projects/electricity-demand-pipeline/" class="project-card rotating" data-index="3">
+        <span class="card-tag">Time Series</span>
+        <h3>Electricity Demand Forecasting</h3>
+        <p>Hourly demand pipeline with InfluxDB ingestion and day-ahead Prophet forecasts on AWS Lambda.</p>
+      </a>
+      <a href="/projects/customer-analytics/" class="project-card rotating" data-index="4">
+        <span class="card-tag">ML</span>
+        <h3>Customer Analytics</h3>
+        <p>Churn prediction, CLV modeling, and RFM segmentation on telco and retail datasets.</p>
+      </a>
+      <a href="/projects/cinema-serverless-aws/" class="project-card rotating" data-index="5">
+        <span class="card-tag">Cloud</span>
+        <h3>Cinema Serverless AWS</h3>
+        <p>Full serverless app with Lambda, DynamoDB, API Gateway, and S3 static hosting.</p>
+      </a>
+    </div>
+  </div>
+  <div class="carousel-dots" id="carousel-dots"></div>
+  <a href="/projects/" class="view-all">View all 14 projects →</a>
+</div>
+
+<script>
+(function() {
+  const cards = document.querySelectorAll('.project-card.rotating');
+  const totalCards = cards.length;
+  const visibleCount = 2; // show 2 rotating cards at a time (+ 1 pinned)
+  let current = 0;
+
+  function showCards() {
+    cards.forEach((card, i) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(12px)';
+      card.style.display = 'none';
+    });
+    for (let j = 0; j < visibleCount; j++) {
+      const idx = (current + j) % totalCards;
+      const card = cards[idx];
+      card.style.display = 'block';
+      // Trigger reflow for animation
+      void card.offsetWidth;
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+    }
+    // Update dots
+    const dots = document.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === current);
+    });
+  }
+
+  // Build dots
+  const dotsContainer = document.getElementById('carousel-dots');
+  for (let i = 0; i < totalCards; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => { current = i; showCards(); });
+    dotsContainer.appendChild(dot);
+  }
+
+  showCards();
+  setInterval(() => {
+    current = (current + 1) % totalCards;
+    showCards();
+  }, 4000);
+})();
+</script>
+
 {{- end }}{{/* end main */}}

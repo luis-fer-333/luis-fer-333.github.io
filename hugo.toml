@@ -37,13 +37,19 @@ ignoreLogs = ['warning-partial-superfluous-prefix']
   [params.homeInfoParams]
     Title = "Luis Núñez"
     Content = """
-Analytics Engineer with 3+ years at Amazon, building production data pipelines, SQL models, and BI dashboards across 13 EU countries. Over **€100M** in savings and recovered value.
+Analytics Engineer with 3+ years at Amazon building production data systems across 13 EU countries. **€100M+** in savings and recovered value.
 
-**Stack:** SQL (Redshift, CTEs, window functions) · Python (pandas, PySpark, Lambda) · AWS (S3, Glue, Athena) · dbt-style modeling (medallion, star schema) · BI (QuickSight, Preset, Tableau) · Orchestration (Prefect, Lambda)
+---
 
-**What I do:** I take messy multi-source data and turn it into clean, tested, analytics-ready tables that BI teams and stakeholders can actually use — from ingestion through modeling to dashboards.
+**SQL** · **Python** · **AWS** · **Medallion / Star Schema** · **QuickSight · Preset · Tableau** · **Prefect**
 
-Browse my [projects](/projects/) or learn more [about me](/about/).
+Redshift · CTEs · Window Functions · pandas · PySpark · Lambda · S3 · Glue · Athena
+
+---
+
+I take messy multi-source data and turn it into clean, tested, analytics-ready tables — from ingestion through modeling to dashboards.
+
+→ [Projects](/projects/) · [About me](/about/)
 """
 
   [[params.socialIcons]]

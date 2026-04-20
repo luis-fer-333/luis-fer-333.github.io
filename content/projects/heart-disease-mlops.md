@@ -36,5 +36,5 @@ Showing both side-by-side demonstrates that model serving isn't a single solved 
 
 ## Links
 
-- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_XIV/Heart_Disease_MLOps_Deployment.ipynb)
-- [📁 Project folder (includes `api.py`, `app_api.py`, `embedido.py`)](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_XIV)
+- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Heart_Disease_MLOps/Heart_Disease_MLOps_Deployment.ipynb)
+- [📁 Project folder (includes `api.py`, `app_api.py`, `embedido.py`)](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Heart_Disease_MLOps)

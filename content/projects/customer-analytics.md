@@ -38,5 +38,5 @@ Three ML use cases built on a shared scikit-learn foundation:
 
 ## Links
 
-- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_IV/Customer_Analytics_Churn_CLV_Segmentation.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_IV)
+- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Customer_Analytics_Churn_CLV/Customer_Analytics_Churn_CLV_Segmentation.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Customer_Analytics_Churn_CLV)

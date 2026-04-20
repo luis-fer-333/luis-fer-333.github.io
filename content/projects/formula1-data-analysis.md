@@ -55,5 +55,5 @@ Several of the more complex aggregations (top-5 pole positions, average position
 
 ## Links
 
-- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Capstone_I/Formula1_Data_Analysis.ipynb)
-- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Capstone_I)
+- [📓 Notebook](https://github.com/luis-fer-333/portfolio/blob/main/capstones/Formula1_Data_Analysis/Formula1_Data_Analysis.ipynb)
+- [📁 Project folder](https://github.com/luis-fer-333/portfolio/tree/main/capstones/Formula1_Data_Analysis)
