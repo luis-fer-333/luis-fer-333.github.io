@@ -14,6 +14,8 @@ ShowPostNavLinks: false
 
 I'm **Luis Núñez**, an Analytics Engineer based in Barcelona. I build the layer that turns raw data into decision-ready datasets and dashboards — the glue between the engineers who produce data and the analysts, scientists, and stakeholders who consume it.
 
+📄 [Download my CV (PDF)](/Luis_Nunez_CV.pdf)
+
 ## Education
 
 **M.Sc., Data Science & Data Engineering** — Universidad de Castilla-La Mancha · 2024 – 2025
@@ -25,11 +27,11 @@ Python, AWS, Spark, InfluxDB, pandas, MLflow, medallion data-lake patterns.
 
 **Amazon — Business Intelligence Engineer** · Barcelona / Munich / Luxembourg · 2022 – Present
 
-- Architected an automated SLA-claim pipeline across 13 EU countries and 40+ carriers (SQL, Redshift, S3, Lambda) — recovered **€50M in compensation within 6 months**.
-- Built analytics pipelines processing large-scale logistics data, identifying underperforming carriers and generating **€40M in cost savings**.
+- Architected an automated SLA-claim pipeline across 13 EU countries and 40+ carriers (SQL, Redshift, S3, Lambda) with significant financial recovery impact.
+- Built analytics pipelines processing large-scale logistics data, identifying underperforming carriers and driving measurable cost savings.
 - Productionized EU-wide SQL data models powering performance monitoring across 14 countries and 40+ stakeholders.
-- Developed KPI and volume-tracking frameworks comparing forecasts vs actuals — **€20M in network optimization savings**.
-- Optimized complex SQL transformations on 100TB+ datasets — **40% performance improvement** and reduced compute costs.
+- Developed KPI and volume-tracking frameworks comparing forecasts vs actuals, contributing to network optimization savings.
+- Optimized complex SQL transformations on petabyte-scale datasets — **40% performance improvement** and reduced compute costs.
 - Built automated ETL workflows (Python + SQL + Redshift) for ingestion, transformation, and validation of high-volume operational datasets.
 
 **ASTech (AUDI AG) — Software Developer** · Ingolstadt, Germany · 2020 – 2021
