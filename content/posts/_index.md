@@ -1,9 +1,9 @@
 ---
 title: "Writing"
-description: "Notes on analytics engineering practice — trade-offs, lessons, and opinions."
+description: "Notes on data engineering practice — trade-offs, lessons, and opinions."
 ---
 
-Notes on analytics engineering practice. Coming soon — ideas in the backlog:
+Notes on data engineering practice. Coming soon — ideas in the backlog:
 
 - *Why medallion architectures beat single-layer data lakes*
 - *The hidden cost of untyped columns in Postgres*

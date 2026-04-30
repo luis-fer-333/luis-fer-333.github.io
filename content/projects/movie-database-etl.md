@@ -4,7 +4,7 @@ date: 2024-12-01
 draft: false
 weight: 2
 tags: ["ETL", "REST API", "MongoDB", "SQLite", "SQL", "Python", "Pandas"]
-categories: ["Analytics Engineering"]
+categories: ["Data Engineering"]
 summary: "An end-to-end ETL pipeline that ingests movie metadata from IMDb bulk files and a REST API, stages it in MongoDB, and lands it in a normalized relational schema with foreign keys."
 featured: true
 ---

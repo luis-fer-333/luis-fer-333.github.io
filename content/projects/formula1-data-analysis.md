@@ -4,7 +4,7 @@ date: 2024-10-01
 draft: false
 weight: 7
 tags: ["Pandas", "SQL-style", "Data Modeling", "Folium", "Visualization"]
-categories: ["Analytics Engineering"]
+categories: ["Data Engineering"]
 summary: "A pandas-driven analysis across 13 relational CSVs (75 years of F1 history) with multi-way joins, filtering, and map-based visualization."
 featured: false
 ---

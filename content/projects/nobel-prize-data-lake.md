@@ -4,7 +4,7 @@ date: 2025-04-01
 draft: false
 weight: 1
 tags: ["Data Lake", "AWS", "Lambda", "S3", "Prefect", "ETL", "Medallion", "Python"]
-categories: ["Analytics Engineering"]
+categories: ["Data Engineering"]
 summary: "A medallion-architecture data lake on AWS S3 with Prefect-orchestrated ETL Lambdas — raw API responses → bronze joins → silver analytics table."
 featured: true
 ---

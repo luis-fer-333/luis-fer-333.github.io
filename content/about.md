@@ -12,7 +12,7 @@ ShowPostNavLinks: false
 
 ---
 
-I'm **Luis Núñez**, an Analytics Engineer based in Barcelona. I build the layer that turns raw data into decision-ready datasets and dashboards — the glue between the engineers who produce data and the analysts, scientists, and stakeholders who consume it.
+I'm **Luis Núñez**, a Data Engineer based in Barcelona. I build the layer that turns raw data into decision-ready datasets and dashboards — the glue between the engineers who produce data and the analysts, scientists, and stakeholders who consume it.
 
 📄 [Download my CV (PDF)](/Luis_Nunez_CV.pdf)
 

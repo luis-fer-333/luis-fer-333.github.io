@@ -4,7 +4,7 @@ date: 2025-06-01
 draft: false
 weight: 3
 tags: ["BI", "Supabase", "Preset", "Superset", "PostgreSQL", "SQL", "Dashboards"]
-categories: ["Analytics Engineering"]
+categories: ["Data Engineering"]
 summary: "A full BI stack analyzing 8,847 Airbnb listings — from raw CSV load through SQL modeling on Supabase to stakeholder dashboards in Preset."
 featured: true
 ---

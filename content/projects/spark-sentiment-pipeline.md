@@ -4,7 +4,7 @@ date: 2025-03-01
 draft: false
 weight: 5
 tags: ["PySpark", "AWS Glue", "S3", "ML Pipeline", "MLlib", "Parquet"]
-categories: ["Analytics Engineering"]
+categories: ["Data Engineering"]
 summary: "A distributed ML pipeline processing 17M Amazon reviews with PySpark MLlib on AWS Glue — including S3 medallion storage, feature engineering, and model serialization for batch inference."
 featured: false
 ---

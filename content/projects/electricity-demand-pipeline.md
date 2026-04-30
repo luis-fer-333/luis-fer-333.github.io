@@ -4,7 +4,7 @@ date: 2025-05-01
 draft: false
 weight: 6
 tags: ["Time-series", "InfluxDB", "Forecasting", "ETL", "Docker", "Prophet", "Darts"]
-categories: ["Analytics Engineering"]
+categories: ["Data Engineering"]
 summary: "A continuous ingestion pipeline for Spanish grid demand with InfluxDB storage and Prophet-based day-ahead forecasting. Includes a dashboard for real vs forecast visualization."
 featured: false
 ---

@@ -4,7 +4,7 @@ date: 2024-11-01
 draft: false
 weight: 4
 tags: ["EDA", "SQL", "Pandas", "Statsmodels", "Seaborn", "Business Analysis"]
-categories: ["Analytics Engineering"]
+categories: ["Data Engineering"]
 summary: "A deep exploratory analysis across 4,000 movies to identify the factors driving box-office success — framed around a low-budget-production investment scenario."
 featured: false
 ---

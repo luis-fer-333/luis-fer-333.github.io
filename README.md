@@ -1,6 +1,6 @@
-# Luis Núñez — Analytics Engineer Portfolio
+# Luis Núñez — Data Engineer Portfolio
 
-Hugo + PaperMod portfolio site, optimized for Analytics Engineer positioning.
+Hugo + PaperMod portfolio site, optimized for Data Engineer positioning.
 
 ## Local preview
 
