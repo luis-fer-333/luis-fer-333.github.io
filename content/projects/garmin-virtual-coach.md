@@ -82,5 +82,5 @@ Garmin changed their OAuth flow in March 2026, breaking the standard `garth` lib
 
 ## Links
 
-- [🚀 Live App](https://garmin-virtual-coach.streamlit.app)
+- [🚀 Live App](https://garmin-virtual-coach-s.streamlit.app)
 - [📁 GitHub Repository](https://github.com/luis-fer-333/garmin-virtual-coach)
