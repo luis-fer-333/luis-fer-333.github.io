@@ -4,23 +4,21 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
-<!-- Featured Projects Carousel -->
+<!-- Featured Projects -->
 <div class="featured-projects">
   <h2 class="featured-title">Featured Projects</h2>
   <div class="carousel">
     <div class="carousel-track">
       <a href="/projects/garmin-virtual-coach/" class="project-card pinned">
-              <span class="card-tag">AI + Data Pipeline</span>
-              <h3>Garmin Virtual Coach</h3>
-              <p>AI coach powered by real Garmin data — ingests 25+ endpoints, computes training analytics, and delivers personalized coaching via LLM chat.</p>
-            </a>
-      <div class="carousel-gap"></div>
+        <span class="card-tag">AI + Data Pipeline</span>
+        <h3>Garmin Virtual Coach</h3>
+        <p>AI coach powered by real Garmin data — ingests 25+ endpoints, computes training analytics, and delivers personalized coaching via LLM chat.</p>
+      </a>
       <a href="/projects/medical-appointment-chatbot/" class="project-card pinned">
         <span class="card-tag">LLM + Cloud</span>
         <h3>Medical Appointment Chatbot</h3>
         <p>LLM-powered WhatsApp bot on AWS Lambda for appointment management — LLaMA 3.3-70B, DynamoDB, Google Calendar.</p>
       </a>
-      <div class="carousel-gap"></div>
       <a href="/projects/nobel-prize-data-lake/" class="project-card rotating" data-index="0">
         <span class="card-tag">Data Lake</span>
         <h3>Nobel Prize Data Lake</h3>
@@ -61,28 +59,24 @@
 (function() {
   const cards = document.querySelectorAll('.project-card.rotating');
   const totalCards = cards.length;
-  const visibleCount = 2; // show 2 rotating cards at a time (+ 1 pinned)
+  const visibleCount = 1;
   let current = 0;
 
   function showCards() {
-    cards.forEach((card, i) => {
+    cards.forEach((card) => {
       card.style.opacity = '0';
       card.style.transform = 'translateY(12px)';
       card.style.display = 'none';
     });
-    for (let j = 0; j < visibleCount; j++) {
-      const idx = (current + j) % totalCards;
-      const card = cards[idx];
-      card.style.display = 'block';
-      // Trigger reflow for animation
-      void card.offsetWidth;
-      card.style.opacity = '1';
-      card.style.transform = 'translateY(0)';
-    }
-    // Update dots
+    const card = cards[current % totalCards];
+    card.style.display = 'block';
+    void card.offsetWidth;
+    card.style.opacity = '1';
+    card.style.transform = 'translateY(0)';
+
     const dots = document.querySelectorAll('.carousel-dot');
     dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === current);
+      dot.classList.toggle('active', i === current % totalCards);
     });
   }
 

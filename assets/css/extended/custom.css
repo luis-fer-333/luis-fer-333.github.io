@@ -88,11 +88,11 @@
   grid-row: 1;
 }
 
-.project-card.pinned:first-child {
+.project-card.pinned:nth-of-type(1) {
   grid-column: 1;
 }
 
-.project-card.pinned:nth-child(3) {
+.project-card.pinned:nth-of-type(2) {
   grid-column: 2;
 }
 
@@ -102,7 +102,8 @@
 }
 
 .project-card.rotating {
-  grid-column: span 1;
+  grid-column: 3;
+  grid-row: 1;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
