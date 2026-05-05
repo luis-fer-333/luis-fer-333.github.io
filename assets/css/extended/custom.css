@@ -82,11 +82,20 @@
   opacity: 0.7;
 }
 
+
 .project-card.pinned {
-  grid-row: 1;
-  grid-column: 1;
   border-left: 3px solid var(--primary);
+  grid-row: 1;
 }
+
+.project-card.pinned:first-child {
+  grid-column: 1;
+}
+
+.project-card.pinned:nth-child(3) {
+  grid-column: 2;
+}
+
 
 .carousel-gap {
   display: none;
