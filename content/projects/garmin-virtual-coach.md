@@ -16,29 +16,47 @@ Athletes using Garmin devices generate rich health and performance data — acti
 ## Solution architecture
 
 ```
-User (browser) → Streamlit Cloud (free)
-                    │
-                    ├── Garmin Connect API (v0.3.3, JWT auth)
-                    │     └── 25+ endpoints: activities, sleep, HRV,
-                    │         stress, body battery, training readiness,
-                    │         race predictions, body composition, etc.
-                    │
-                    ├── Feature Engine (Python)
-                    │     ├── Training load (TRIMP, ACWR)
-                    │     ├── HR zone time distribution
-                    │     ├── Weekly volume trends
-                    │     └── Recovery score (sleep + HRV composite)
-                    │
-                    ├── LLM Coach (Groq / Gemini / OpenAI)
-                    │     ├── Structured prompt with athlete context
-                    │     ├── Multi-turn conversation memory
-                    │     └── Custom plan builder (interactive Q&A)
-                    │
-                    └── Dashboard (matplotlib/seaborn)
-                          ├── HR zone distribution
-                          ├── Training load per activity
-                          ├── Sleep architecture (donut)
-                          └── Overnight HRV with baseline bands
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              GARMIN VIRTUAL COACH                            │
+│                           Architecture Overview                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────┐       ┌──────────────────────┐       ┌──────────────────────┐
+│              │       │                      │       │                      │
+│    Garmin    │       │   Streamlit Cloud    │       │     Groq / LLM       │
+│   Connect    │──────▶│                      │──────▶│                      │
+│    API       │       │   ┌──────────────┐   │       │  Llama 3.3 70B       │
+│              │       │   │ Ingestion    │   │       │  (sub-second)        │
+│  25+ endpoints       │   │ Layer        │   │       │                      │
+│  ─────────── │       │   └──────┬───────┘   │       └──────────┬───────────┘
+│  • Activities│       │          │           │                  │
+│  • Sleep     │       │          ▼           │                  │
+│  • HRV       │       │   ┌──────────────┐   │                  │
+│  • Stress    │       │   │ Feature      │   │                  │
+│  • Body Bat. │       │   │ Engine       │   │                  ▼
+│  • Training  │       │   │              │   │       ┌──────────────────────┐
+│  • Race Pred.│       │   │ • TRIMP/ACWR │   │       │                      │
+│  • Body Comp.│       │   │ • HR Zones   │   │       │   Coach Response     │
+│              │       │   │ • Recovery   │   │       │   (personalized,     │
+└──────────────┘       │   │ • Trends     │   │       │    data-aware)       │
+                       │   └──────┬───────┘   │       │                      │
+                       │          │           │       └──────────────────────┘
+                       │          ▼           │
+                       │   ┌──────────────┐   │       ┌──────────────────────┐
+                       │   │ Prompt       │   │       │                      │
+┌──────────────┐       │   │ Builder      │───┼──────▶│   Dashboard          │
+│              │       │   │              │   │       │   • HR Zones chart   │
+│    User      │◀──────│   │ Structured   │   │       │   • Training Load    │
+│  (Browser)   │       │   │ context +    │   │       │   • Sleep donut      │
+│              │──────▶│   │ conversation │   │       │   • HRV overnight    │
+│              │       │   └──────────────┘   │       │   • Activity table   │
+└──────────────┘       │                      │       │                      │
+                       └──────────────────────┘       └──────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  Data Flow: Garmin API → Ingestion → Feature Engine → Prompt Builder → LLM │
+│  Auth: JWT tokens (cached) │ Storage: Stateless (session only) │ Cost: $0   │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ## Key decisions and trade-offs
