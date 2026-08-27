@@ -511,10 +511,40 @@ h1, h2, h3, h4 { font-family: "Sora", sans-serif; line-height: 1.15; font-weight
 .footer-col h4 { color: var(--white); font-size: 1rem; margin-bottom: 16px; }
 .footer-col a, .footer-col span { display: block; margin-bottom: 10px; font-size: .93rem; transition: color .2s ease; }
 .footer-col a:hover { color: var(--sun); }
+.footer-zone { padding-bottom: 28px; border-top: 1px solid rgba(255,255,255,.12); padding-top: 26px; }
+.footer-zone h4 { color: var(--white); font-size: 1rem; margin-bottom: 14px; }
+.zone-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.zone-list li {
+    font-size: .87rem; line-height: 1;
+    border: 1px solid rgba(255,255,255,.2); border-radius: 999px;
+    padding: 7px 13px; color: rgba(255,255,255,.8);
+}
+.zone-note { font-size: .87rem; color: rgba(255,255,255,.55); max-width: 640px; }
 .footer-bottom {
     display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
     padding-top: 24px; border-top: 1px solid rgba(255,255,255,.12);
     font-size: .85rem; color: rgba(255,255,255,.55);
+    /* keep the last line clear of the floating WhatsApp button */
+    padding-bottom: 44px;
+}
+
+/* Floating WhatsApp */
+.wa-float {
+    position: fixed; right: 22px; bottom: 22px; z-index: 60;
+    display: inline-flex; align-items: center; gap: 9px;
+    background: #25d366; color: #fff;
+    border-radius: 999px; padding: 13px 19px 13px 15px;
+    font-weight: 600; font-size: .95rem;
+    box-shadow: 0 14px 30px -10px rgba(37, 211, 102, .7);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.wa-float svg { width: 24px; height: 24px; flex: 0 0 auto; }
+.wa-float:hover { color: #fff; transform: translateY(-3px); box-shadow: 0 20px 38px -12px rgba(37, 211, 102, .8); }
+.wa-float:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; }
+@media (max-width: 560px) {
+    /* icon only, so it never covers the content on a phone */
+    .wa-float { padding: 14px; right: 16px; bottom: 16px; }
+    .wa-float span { display: none; }
 }
 
 /* ===== Reveal animation ===== */
